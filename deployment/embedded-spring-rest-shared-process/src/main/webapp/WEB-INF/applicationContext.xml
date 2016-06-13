@@ -24,5 +24,8 @@
   <context:annotation-config />
 
   <bean class="org.camunda.bpm.example.loanapproval.Starter" /> 
+  <bean class="org.camunda.bpm.example.loanapproval.SpringApplicationContext" />
+  <bean id="registerProcessService" class="org.camunda.bpm.example.loanapproval.rest.RegisterProcessService" />
+  
   <bean id="calculateInterestService" class="org.camunda.bpm.example.loanapproval.CalculateInterestService" />
 </beans>
