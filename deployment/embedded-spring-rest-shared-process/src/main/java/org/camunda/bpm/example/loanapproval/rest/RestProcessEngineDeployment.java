@@ -14,7 +14,7 @@ public class RestProcessEngineDeployment extends Application {
     Set<Class<?>> classes = new HashSet<Class<?>>();
     
     //Expose RegisterProcess service to Camunda REST API
-    classes.add(RegisterProcess.class);    
+    classes.add(CustomProcessEngineRest.class);    
 
     classes.addAll(CamundaRestResources.getResourceClasses());
     classes.addAll(CamundaRestResources.getConfigurationClasses());
